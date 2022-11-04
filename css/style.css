@@ -3,12 +3,187 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: "Prompt" , sans-serif;*/
+    font-family:  sans-serif;
 }
 
 /*UTILITIES*/
-
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    align-self: center;
+}
+main{
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
 
 /*header*/
+header{
+    color: #fff;
+    background-color: rgb(255,105,0);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 5px black;
+    z-index: 5;
+}
+/*LEFT-HEADER*/
+.h-navbar{
+    
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.h-section{
+    display: flex;
+    height: 100%;
+    width: 210px;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 18px;
+   
+}
+/*CENTER-HEADER*/
+.h-logo{
+    width: 300px;
+    height: 100%;
+    display: flex;
 
+}
+.logo-image{
+    height: 50%;
+    align-self: center;
+    display: block;
 
+}
+/*RIGHT-HEADER*/
+.h-inter{
+    height: 70px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.h-inter i{
+    align-self: center;
+}
+/*MAIN*/
+
+.row{
+    display: flex;
+    gap: 15px;
+}
+.col{
+    flex-basis: calc(100% / 3);
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+/*CARDS*/
+.card{
+    position: relative;
+}
+
+/*card-postits*/
+.favorite i{
+    align-self: center;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    
+}
+.favorite{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    justify-content: center;
+    display: flex;
+    z-index: 3;
+}
+.discount{
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    z-index: 3;
+}
+.eco-friend{
+    background-color: rgb(0,128,0);
+    color:rgb(255, 255, 255);
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    z-index: 3;
+    
+}
+.eco-friend-one{
+    background-color: rgb(0,128,0);
+    color:rgb(255, 255, 255);
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    z-index: 3;
+    
+}
+/*ARTICLE-DESCRIPTION*/
+.brand{
+    height: 18px;
+}
+h4{
+    height: 18px;
+}
+.real-price{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+/*HOVER*/
+/*.card:hover::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: block;
+
+}*/
+.card:hover .favorite i{
+   
+    color: rgb(255, 0, 0);
+}
+.img-top{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+}
+.card:hover .img-top{
+    display: inline;
+}
