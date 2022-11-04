@@ -19,7 +19,7 @@ a{
 }
 main{
     padding-top: 130px;
-    padding-bottom: 100px;
+    
 }
 img{
     display: block;
@@ -161,17 +161,8 @@ h4{
     font-weight: bold;
 }
 /*HOVER*/
-/*.card:hover::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: "";
-    display: block;
 
-}*/
-.card:hover .favorite i{
+.favorite i:hover{
    
     color: rgb(255, 0, 0);
 }
@@ -186,4 +177,31 @@ h4{
 }
 .card:hover .img-top{
     display: inline;
+}
+/*FOOTER*/
+footer{
+    height: 100px;
+    background-color: rgb(26,26,26);
+    border: 2px solid black;
+    
+    color: #fff;
+}
+
+   
+.company h3{
+    color: #fff;
+    
+}
+.f-info{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.company{
+    padding-top: 20px;
+}
+.social{
+    padding-top: 20px;
+
 }
